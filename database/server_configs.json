@@ -1,0 +1,12 @@
+{
+    "913898936861876296": {
+        "join_msg_enabled": true,
+        "join_msg_text": "HELLO YOU JOIN $USER",
+        "join_msg_channel": 1040754129850597448
+    },
+    "1040741841630400662": {
+        "join_msg_enabled": true,
+        "join_msg_text": "welcome to the server, **$USER**!",
+        "join_msg_channel": 1040741842481840239
+    }
+}

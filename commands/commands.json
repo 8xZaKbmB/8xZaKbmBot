@@ -1,0 +1,274 @@
+{
+    "ascii": [
+        "generates ascii text using figlet\navailable fonts can be found here https://pastebin.com/SdPVt65W ",
+        "ascii <text>",
+        "-font, -color",
+        "ascii moo -font=block -color=green",
+        "general",
+        ""
+    ],
+    "doodlebob": [
+        "makes provided text sound as if doodlebob said it",
+        "doodlebob <text>",
+        "none",
+        "doodlebob you doodle, me spongebob",
+        "fun",
+        ""
+    ],
+    "emojipack": [
+        "downloads and packs all emojis from server in a zip file you can download",
+        "emojipack",
+        "none",
+        "emojipack",
+        "utility",
+        "guildonly"
+    ],
+    "first": [
+        "shows the first message in the current channel",
+        "first",
+        "none",
+        "first",
+        "general",
+        ""
+    ],
+    "fnaf": [
+        "generates a random fnaf game name, the possibilities are near endless",
+        "fnaf <seed>(optional)",
+        "none",
+        "fnaf",
+        "fun",
+        ""
+    ],
+    "help": [
+        "sends help message for BOTNAME",
+        "help <command>(optional)",
+        "none",
+        "help ascii",
+        "general",
+        ""
+    ],
+    "image": [
+        "sends an ai-generated image based on input",
+        "image <text>",
+        "none",
+        "image mario",
+        "other",
+        ""
+    ],
+    "copy": [
+        "sends raw content of a message",
+        "copy <message_id>",
+        "none",
+        "copy 937612398926377020",
+        "utility",
+        ""
+    ],
+    "sort": [
+        "sorts words from input alphabetically",
+        "sort <text>",
+        "none",
+        "sort windows 98 is a nice computer machine",
+        "other",
+        ""
+    ],
+    "purge": [
+        "mass remove messages, useful for spam or changing history",
+        "purge <number_of_messages>",
+        "none",
+        "purge 99",
+        "utility",
+        "guildonly"
+    ],
+    "emoji": [
+        "sends picture of emoji, useful for thumbnails and stuff",
+        "emoji <emoji>",
+        "-brand",
+        "emoji 🙂",
+        "utility",
+        ""
+    ],
+    "saturate": [
+        "saturates an image\n**`(requires image or reply to message with image)`**",
+        "saturate",
+        "-power",
+        "saturate -power=10",
+        "image",
+        ""
+    ],
+    "jpeg": [
+        "makes image look all compressed and jpeg-y\n**`(requires image or reply to message with image)`**",
+        "jpeg",
+        "-quality",
+        "jpeg -quality=0",
+        "image",
+        ""
+    ],
+    "ifunny": [
+        "adds ifunny.co watermark to image\n**`(requires image or reply to message with image)`**",
+        "ifunny",
+        "none",
+        "ifunny",
+        "image",
+        ""
+    ],
+    "grayscale": [
+        "makes image colorless\n**`(requires image or reply to message with image)`**",
+        "grayscale",
+        "none",
+        "grayscale",
+        "image",
+        ""
+    ],
+    "ping": [
+        "shows bot info and statistics",
+        "ping",
+        "none",
+        "ping",
+        "general",
+        ""
+    ],
+    "qr": [
+        "generates a qr code",
+        "qr <text>",
+        "none",
+        "qr coolingtool",
+        "image",
+        ""
+    ],
+    "user": [
+        "gets user information",
+        "user <user_id or user_name>",
+        "none",
+        "user 839035980371460107",
+        "general",
+        ""
+    ],
+    "caption": [
+        "adds a caption to an image\n**`(requires image or reply to message with image)`**",
+        "caption <text>",
+        "none",
+        "caption get real",
+        "image",
+        ""
+    ],
+    "reg": [
+        "turns your text from this 123 to​ ​🇹​🇭​🇮​🇸​ ​1️⃣​2️⃣​3️⃣​",
+        "reg <text>",
+        "none",
+        "reg to this 123",
+        "fun",
+        ""
+    ],
+    "exec": [
+        "**exec**utes code",
+        "exec <code>",
+        "-m, -file",
+        "exec quit()",
+        "utility",
+        "forbidden"
+    ],
+    "blur": [
+        "blurs an image\n**`(requires image or reply to message with image)`**",
+        "blur",
+        "-power",
+        "blur -power=15",
+        "image",
+        ""
+    ],
+    "bloom": [
+        "applies a bloom image effect to an image\n**`(requires image or reply to message with image)`**",
+        "bloom",
+        "-power, -radius",
+        "bloom -power=0.6 -radius=10",
+        "image",
+        ""
+    ],
+    "motivate": [
+        "makes an image into a motivational poster\n**`(requires image or reply to message with image)`**",
+        "motivate top text, bottom text",
+        "none",
+        "motivate get real, just get real",
+        "image",
+        ""
+    ],
+    "copypasta": [
+        "All salmon should be 🛏 frozen for 🦊 30 days or 👹 cooked 🍪 thoroughly and 🐼 cooled to 🇹🇬 body temperature before being rolled 📜 into 🏸 a 😀 quid 🦑",
+        "copypasta <text>",
+        "none",
+        "copypasta I  can travel,  I  can eat ️ good  food, I  can see  new people, ‍‍‍ I  can smile,  I  can make memories  that I  dreamed  of having, I  can laugh,  I  can support ️my  family ‍‍ and my  friends, I  can learn  about the world, ️ and I  can give back to everyone because  of you. I  do owe people ‍‍ shit.  I  owe a lot.",
+        "fun",
+        ""
+    ],
+    "servercollage": [
+        "combines all server members in an image",
+        "servercollage",
+        "none",
+        "servercollage",
+        "fun",
+        ""
+    ],
+    "lcd": [
+        "add lcd effect to image\n**`(requires image or reply to message with image)`**",
+        "lcd",
+        "none",
+        "lcd",
+        "image",
+        ""
+    ],
+    "colorstat": [
+        "list colors in image sorted by occurence\n**`(requires image or reply to message with image)`**",
+        "colorstat",
+        "none",
+        "colorstat",
+        "image",
+        ""
+    ],
+    "identicon": [
+        "generates stackoverflow style identicon",
+        "identicon <seed>",
+        "none",
+        "identicon",
+        "image",
+        ""
+    ],
+    "identisprite": [
+        "generates github style identicon",
+        "identicon <seed>",
+        "none",
+        "identicon",
+        "image",
+        ""
+    ],
+    "crispy": [
+        "makes image extra crispy\n**`(requires image or reply to message with image)`**",
+        "crispy",
+        "none",
+        "crispy",
+        "image",
+        ""
+    ],
+    "upscale": [
+        "upscales image using ai",
+        "crispy",
+        "none",
+        "crispy",
+        "image",
+        ""
+    ],
+    "undecimal": [
+        "turns number into base 11 notation",
+        "undecimal",
+        "none",
+        "undecimal 42",
+        "fun",
+        ""
+    ],
+    "udelimal": [
+        "turns number into udelimal notation",
+        "udelimal",
+        "none",
+        "udelimal 23",
+        "fun",
+        ""
+    ]
+}

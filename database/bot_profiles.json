@@ -1,0 +1,50 @@
+{
+    "prefixes": {
+        "udeline": [
+            "u,",
+            "u>",
+            "[]"
+        ],
+        "ndeline": [
+            "u,,",
+            "u>>",
+            "{}"
+        ],
+        "zoodeline": [
+            "z,",
+            "z>"
+        ],
+        "foodeline": [
+            "f,",
+            "f>"
+        ],
+        "nuudeline": [
+            "n,",
+            "n>"
+        ],
+        "moodeline": [
+            "m,",
+            "m>"
+        ],
+        "odeline": [
+            "o,",
+            "o>"
+        ],
+        "noodeline": [
+            "noo,",
+            "noo>"
+        ],
+        "bromeline": [
+            "bro,",
+            "bro,"
+        ],
+        "limeline": [
+            "lime,",
+            "l,",
+            "🍋"
+        ],
+        "alphaline": [
+            "a,"
+        ]
+    }
+}

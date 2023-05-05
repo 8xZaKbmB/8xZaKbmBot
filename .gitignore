@@ -1,0 +1,12 @@
+config/private
+config/private/secrets.txt
+commands/image/c_upocalypse.py
+image/resources/logo_parts
+__pycache__
+.vscode
+.env
+database/fnaf.json
+database/activity.json
+misc/multi_main.py
+botrunner.py
+commands/fun/c_game.py
