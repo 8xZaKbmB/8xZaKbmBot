@@ -7,6 +7,7 @@ def dominant_color(im, exclude):
     if exclude == "default":
         exclude = [
             "247253255",
+            "250243221",
             "255255255",
             "000000000"
         ]
