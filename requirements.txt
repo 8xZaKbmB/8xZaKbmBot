@@ -1,0 +1,13 @@
+py-cord
+requests
+Pillow
+flask
+python-dotenv
+pyfiglet
+emoji-data-python
+emoji
+pygments
+pydictionary
+psutil
+qrcode
+colorutils

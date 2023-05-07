@@ -4,11 +4,11 @@ async def run_command(discord, message, args, client, opt):
     
     if len(args) < 1 and not message.reference:
         await message.reply("i need a number to do that")
-        return await commands.run_command("udelimal", discord, message, ["u>help", "ascii"], client, [])
+        return await commands.run_command("udelimal", discord, message, [prefix, "udelimal"], client, [])
 
     if not args[1].isnumeric():
         await message.reply("i need a number to do that and that's not a number")
-        return await commands.run_command("udelimal", discord, message, ["u>help", "ascii"], client, [])
+        return await commands.run_command("udelimal", discord, message, [prefix, "udelimal"], client, [])
 
     x = int(args[1])
     digs = "udeline"

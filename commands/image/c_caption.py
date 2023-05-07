@@ -23,7 +23,7 @@ async def run_command(discord, message, args, client, opt):
 
     if len(args) < 1:
         await message.reply("i need some text to do that")
-        return await commands.run_command("help", discord, message, ["u>help", "caption"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "caption"], client, [])
 
     if url.endswith("png") or url.endswith("jpg") or url.endswith("jpeg"):
         await message.add_reaction("⏱️")

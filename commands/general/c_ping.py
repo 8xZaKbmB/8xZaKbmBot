@@ -11,13 +11,11 @@ async def run_command(discord, message, args, client, opt):
 
     embed = discord.Embed(description="uptime: **`"+time_decorate(str(datetime.timedelta(seconds=uptime)), True) + "`**\n"+"latency: **`"+str("???")+"`**\n""RAM usage: **`"+str(ramusage)+"%`**\n", color=client.theme_color)
     embed.set_author(name=client.user.name+" stats", icon_url=client.user.display_avatar.url)
-    embed.set_footer(text="so far, you used this bot " + str(db.db_get("database/activity.json")[str(message.author.id)])+" times")
 
     mymsg = await message.reply(embed=embed)
     latency = mymsg.created_at - message.created_at
 
     embed = discord.Embed(description="uptime: **`"+time_decorate(str(datetime.timedelta(seconds=uptime)), True)+"`**\n" + "latency: **`"+time_decorate(str(latency), False)+"`**\n""RAM usage: **`"+str(ramusage)+"%`**\n", color=client.theme_color)
     embed.set_author(name=client.user.name+" stats", icon_url=client.user.display_avatar.url)
-    embed.set_footer(text="so far, you used this bot " + str(db.db_get("database/activity.json")[str(message.author.id)])+" times")
 
     await mymsg.edit(embed=embed)

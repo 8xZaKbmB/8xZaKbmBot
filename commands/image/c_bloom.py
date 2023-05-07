@@ -26,7 +26,7 @@ async def run_command(discord, message, args, client, opt):
     image = await get_image(message=message,client=client)
     if image is None:
         await message.reply("i need an image to do that")
-        return await commands.run_command("help", discord, message, ["u>help", "bloom"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "bloom"], client, [])
     
     progmsg = await message.reply(f"processing, please wait...")
 

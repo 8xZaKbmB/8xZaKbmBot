@@ -4,12 +4,14 @@ from PIL import ImageDraw
 from PIL import ImageChops
 from PIL import ImageFilter
 from io import BytesIO
-import math
+import math, commands
 from imageget import get_image
 from random import randint
 
 
 async def run_command(discord, message, args, client, opt): 
+    args.pop(0)
+
     game = randint(0,2)
     name_array = []    
     options = [
@@ -17,12 +19,26 @@ async def run_command(discord, message, args, client, opt):
         ["New Game", "Continue"],
         ["NEW GAME", "LOAD GAME"]
     ]
-    if len(args) > 2:
-        game = int(args[2])
-    if len(args) > 1:
-        name_array = name_array + args[3:]
+    games = ["1","2","3"]
+    games_list = ""
+    for x in games:
+        games_list += f"`{x}` "
+
+    if not args[0].isnumeric():
+        return await message.reply(f"{args[0]} is not one of the available options\navailable options are: {games_list}")
+    if type(int(args[0])) is int:
+        if not str(int(args[0])) in games:
+            return await message.reply(f"{args[0]} is not one of the available options\navailable options are: {games_list}")
+        game = int(args[0]) - 1
+        args.pop(0)
+    if len(args) > 0:
+        name_array = args
     else:
-        name_array = ["Please", "Give", "a", "Name"]
+        await message.reply("i need some text to do that")
+        return await commands.run_command("help", discord, message, [prefix, "fnafmenu"], client, [])
+    if len(args) < 0:
+        await message.reply("missing arguments")
+        return await commands.run_command("help", discord, message, [prefix, "fnafmenu"], client, [])
     res = [(854, 480), (640, 480), (640, 480)]
     colors = [(255,255,255), (255,255,255), (190,255,128)]
     positions = [(115, 51), (56, 15), (115, 51)]
@@ -44,6 +60,9 @@ async def run_command(discord, message, args, client, opt):
 
 
     char = await get_image(message=message,client=client)
+    if char is None:
+        await message.reply("i need an image to do that")
+        return await commands.run_command("help", discord, message, [prefix, "fnafmenu"], client, [])
 
     image = Image.new("RGBA", res[game], "black")
     text = Image.new("RGBA", res[game], "black")

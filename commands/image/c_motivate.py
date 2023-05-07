@@ -19,7 +19,7 @@ async def run_command(discord, message, args, client, opt):
     
     if len(args) < 1:
         await message.reply("i need some text to do that")
-        return await commands.run_command("help", discord, message, ["u>help", "motivate"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "motivate"], client, [])
 
     await message.add_reaction("⏱️")
     image = image.convert("RGBA")

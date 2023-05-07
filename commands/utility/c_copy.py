@@ -4,7 +4,7 @@ async def run_command(discord, message, args, client, opt):
 
     if len(args) < 2 and not message.reference:
         await message.reply("i need a message to copy")
-        return await commands.run_command("help", discord, message, ["u>help", "copy"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "copy"], client, [])
     mobile = False
     for x in range(len(opt)):
         opt[x] = opt[x].split("=")
@@ -29,7 +29,3 @@ async def run_command(discord, message, args, client, opt):
         embed = discord.Embed(description=msg.content[0:2000],color=client.theme_color)
         embed.title = "copy the text from the description"
         await message.reply(embed=embed)
-    
-    
-    #await message.reply("```"+msg.content.replace("```", "`\0`\0`")+"```")
-

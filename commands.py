@@ -1,6 +1,8 @@
+import os
 import sys
 sys.path.append('helpers')
 import db
+import helper
 sys.path.append('commands')
 sys.path.append('commands/fun')
 sys.path.append('commands/general')
@@ -14,11 +16,14 @@ async def run_command(command, discord, message, args, client, opt):
     try:
         command_module = __import__(f"c_{command}", globals(), locals(), [], 0)
     except Exception as e:
-        return
+        print(e)
+        raise SystemError(e)
 
     try:
+        command_module.prefix = helper.prefix.check(message.content, client)[2]
         await command_module.run_command(discord, message, args, client, opt)
     except Exception as e:
+        print(e)
         raise SystemError(e)
 
     activity_measure(message)

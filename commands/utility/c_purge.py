@@ -9,7 +9,7 @@ async def run_command(discord, message, args, client, opt):
         
     if len(args) < 2:
         await message.reply("you need to tell me how many messages to delete")
-        return await commands.run_command("help", discord, message, ["u>help", "purge"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "purge"], client, [])
     count = args[1]
 
     messages = await message.channel.history(limit=int(count)).flatten()

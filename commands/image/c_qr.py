@@ -6,7 +6,7 @@ async def run_command(discord, message, args, client, opt):
 
     if len(args) < 2:
         await message.reply("i need some text to do that")
-        return await commands.run_command("help", discord, message, ["u>help", "qr"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "qr"], client, [])
     args.pop(0)
 
     qr = qrcode.QRCode(

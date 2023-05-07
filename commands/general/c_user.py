@@ -8,7 +8,7 @@ async def run_command(discord, message, args, client, opt):
 
     if len(args) < 1:
         await message.reply("i need a user id / name to do that")
-        return await commands.run_command("help", discord, message, ["u>help", "user"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "user"], client, [])
 
     activity_dict = {
         "online": "https://cdn.discordapp.com/emojis/941045780289060904.webp?size=96&quality=lossless",

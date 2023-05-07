@@ -47,14 +47,6 @@
         "general",
         ""
     ],
-    "image": [
-        "sends an ai-generated image based on input",
-        "image <text>",
-        "none",
-        "image mario",
-        "other",
-        ""
-    ],
     "copy": [
         "sends raw content of a message",
         "copy <message_id>",
@@ -215,14 +207,6 @@
         "image",
         ""
     ],
-    "colorstat": [
-        "list colors in image sorted by occurence\n**`(requires image or reply to message with image)`**",
-        "colorstat",
-        "none",
-        "colorstat",
-        "image",
-        ""
-    ],
     "identicon": [
         "generates stackoverflow style identicon",
         "identicon <seed>",
@@ -247,14 +231,6 @@
         "image",
         ""
     ],
-    "upscale": [
-        "upscales image using ai",
-        "crispy",
-        "none",
-        "crispy",
-        "image",
-        ""
-    ],
     "undecimal": [
         "turns number into base 11 notation",
         "undecimal",
@@ -270,5 +246,40 @@
         "udelimal 23",
         "fun",
         ""
+    ],
+    "leaderboard": [
+        "view the bot usage leaderboard",
+        "leaderboard", 
+        "none", 
+        "leaderboard",
+        "other",
+        ""
+    ],
+    "fnafmenu": [
+        "makes image of a fnaf fangame menu screen\n**`(requires image or reply to message with image)`**",
+        "fnafmenu <style> <name>", 
+        "none", 
+        "fnafmenu",
+        "image",
+        ""
+    ],
+    "abstract": [
+        "makes an abstract style copy of an image\n**`(requires image or reply to message with image)`**",
+        "abstract",
+        "none",
+        "abstract",
+        "image",
+        ""
+    ],
+    "upscale": [
+        "upscales an image using ai \n(currently doesnt work)",
+        "upscale", 
+        "none", 
+        "upscale",
+        "image",
+        ""
+    ],
+    "real": [
+        "idk"
     ]
 }

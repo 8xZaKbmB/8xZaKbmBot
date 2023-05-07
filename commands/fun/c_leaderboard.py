@@ -9,15 +9,15 @@ async def run_command(discord, message, args, client, opt):
         array.append(f"**{user.name}#{user.discriminator}**: {output[x]}")
     array.reverse()
 
-    array[0] = "🏅 " + array[0]
-    array[1] = "🥈 " + array[1]
-    array[2] = "🥉 " + array[2]
+    if len(array) > 0:
+        array[0] = "🏅 " + array[0]
+    if len(array) > 1:
+        array[1] = "🥈 " + array[1]
+    if len(array) > 2:
+        array[2] = "🥉 " + array[2]
     for x in range(len(array)):
         if x > 2:
             array[x] = "▫️ "+array[x]
-
-    #array = array[]
-    # array.append("...")
 
     embed = discord.Embed(description="\n".join(array),title="bot usage leaderboard", color=client.theme_color)
 

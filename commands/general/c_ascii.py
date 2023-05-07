@@ -1,12 +1,13 @@
 import pyfiglet as fig
 import commands, re
 from helper import ansi
+import io
 
 async def run_command(discord, message, args, client, opt):
     args.pop(0)
 
     if len(args) < 1:
-        return await commands.run_command("help", discord, message, ["u>help", "ascii"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "ascii"], client, [])
 
     font = "stop"
     color = "clear"
@@ -30,9 +31,11 @@ async def run_command(discord, message, args, client, opt):
     f = fig.Figlet(font=font.strip())
     if color != "clear":
         output = ansi(color, "0")+f.renderText(" ".join(args)).replace("`", "\0`")
-        await message.reply((">>> ```ansi\n"+output[0:1981]+"```"))
+        file = io.BytesIO(bytes(output, "utf8"))
+        await message.reply(file=discord.File(file, "output.ansi"))
     else:
         output = f.renderText(" ".join(args)).replace("`", "\0`")
-        await message.reply((">>> ```\n"+output[0:1988]+"```"))
+        file = io.BytesIO(bytes(output, "utf8"))
+        await message.reply(file=discord.File(file, "output.ansi"))
 
     

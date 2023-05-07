@@ -22,7 +22,7 @@ async def run_command(discord, message, args, client, opt):
     args.pop(0)
     if len(args) < 1:
         await message.reply("i need some text to do that")
-        return await commands.run_command("help", discord, message, ["u>help", "doodlebob"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "doodlebob"], client, [])
     words = args
     doodleisms = ['hoy', 'mi', 'me', 'fro', 'yay', 'mey', 'mee', 'mea', 'hoy', 'noy']
     for i in range(len(words)):

@@ -40,7 +40,12 @@ class MyClient(discord.Bot):
             args = re.split(" +", message.content.strip())
             prefix_len = helper.prefix.check(message.content, self)[1]
             command = args[0][prefix_len:]
-            await commands.run_command(command, discord, message, args, self, opt)
+            try:
+                await commands.run_command(command, discord, message, args, self, opt)
+            except Exception as e:
+                print(e)
+                raise SystemError(e)
+
 
     async def on_member_join(self, member):
         server_configs = db.db_get("database/server_configs.json")

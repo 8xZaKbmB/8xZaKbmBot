@@ -4,7 +4,7 @@ async def run_command(discord, message, args, client, opt):
     
     if len(args) < 1 and not message.reference:
         await message.reply("i need some text to do that")
-        return await commands.run_command("reg", discord, message, ["u>help", "ascii"], client, [])
+        return await commands.run_command("help", discord, message, [prefix, "reg"], client, [])
 
     args.pop(0)
     out = ""
@@ -17,6 +17,10 @@ async def run_command(discord, message, args, client, opt):
             return char+u"\uFE0F"+u"\u20E3"
         if ord(char.upper())-65 > 25 or ord(char.upper())-65 < 0:
             return char
+        if char == "*":
+            return "*️⃣"
+        if char == "#":
+            return "#️⃣"
             
         return chr(ord(char.upper())+127397)
     

@@ -6,7 +6,8 @@ __pycache__
 .vscode
 .env
 database/fnaf.json
-database/activity.json
 misc/multi_main.py
 botrunner.py
 commands/fun/c_game.py
+test.py
+misc/scripts

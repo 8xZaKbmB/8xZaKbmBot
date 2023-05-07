@@ -1,10 +1,10 @@
-#  <img src="https://media.discordapp.net/attachments/939505242498797601/963157577254993930/image.png" width="128"> udeline
+# <img src="https://media.discordapp.net/attachments/939505242498797601/963157577254993930/image.png" width="256"> udeline
 doesn't that help command look fancy?
 
-discord bot made in **py-cord**, which's main features include:
+discord bot made in python with **py-cord**, with features such as:
 > - general use
 > - backing up emoji
-> - image commands to splice up your images
+> - image commands to spice up your images
 > - caption command mandatory for every bot
 > - other **cool** commands
 ## dependencies
@@ -17,8 +17,7 @@ discord bot made in **py-cord**, which's main features include:
 > - and more i lost track lol
 
 # invite
-bot looks interesting? add it to your server by clicking this link
-https://discord.com/oauth2/authorize?client_id=913901320686153728&scope=bot&permissions=8
+bot looks interesting? add it to your server by [clicking here](https://discord.com/oauth2/authorize?client_id=913901320686153728&scope=bot&permissions=8)
 
 
 
