@@ -1,0 +1,13 @@
+2023-05-07 19:54:44,659:WARNING:discord.client: PyNaCl is not installed, voice will NOT be supported
+2023-05-07 19:54:44,659:INFO:discord.client: logging in using static token
+2023-05-07 19:54:44,990:DEBUG:discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+2023-05-07 19:54:44,991:DEBUG:discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1097228029782151239', 'username': 'alphaline', 'global_name': None, 'display_name': None, 'avatar': '615c5cdae9bb1a147afabea6dfaf6ad2', 'discriminator': '8322', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': False, 'premium_type': 0, 'linked_users': [], 'avatar_decoration': None, 'email': None, 'verified': True}
+2023-05-07 19:54:45,026:DEBUG:discord.http: GET https://discord.com/api/v10/gateway with None has returned 200
+2023-05-07 19:54:45,027:DEBUG:discord.http: GET https://discord.com/api/v10/gateway has received {'url': 'wss://gateway.discord.gg'}
+2023-05-07 19:54:45,288:DEBUG:discord.gateway: Created websocket connected to wss://gateway.discord.gg?encoding=json&v=10&compress=zlib-stream
+2023-05-07 19:54:45,288:DEBUG:discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-c-zbrx",{"micros":0.0}]']}}
+2023-05-07 19:54:45,289:INFO:discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2023-05-07 19:54:45,318:INFO:discord.client: Cleaning up tasks.
+2023-05-07 19:54:45,319:INFO:discord.client: Cleaning up after 1 tasks.
+2023-05-07 19:54:45,456:INFO:discord.client: All tasks finished cancelling.
+2023-05-07 19:54:45,456:INFO:discord.client: Closing the event loop.

@@ -6,6 +6,7 @@ import time
 import os
 import sys
 import helper
+import logging
 
 sys.path.append("helpers")
 from udelinelogging import log
@@ -18,7 +19,11 @@ from keep_running import keep_alive
 from dotenv import load_dotenv
 load_dotenv()
 
-# comment
+logger = logging.getLogger('discord')
+logger.setLevel(logging.DEBUG)
+handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
+logger.addHandler(handler)
 
 class MyClient(discord.Bot):
 
